@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521/XEPDB1</property>
+		<property name="hibernate.connection.username">PRUEBA</property>
+		<property name="hibernate.connection.password">password</property>
+		<!-- Dialecto Oracle -->
+		<property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- Declaracion de clases-->
+		<mapping class="hibernate.prueba1.entity.Persona"/>
+		<mapping class="hibernate.prueba1.entity.Pasaporte"/>
+		<mapping class="hibernate.prueba1.entity.Hijo"/>
+		<mapping class="hibernate.prueba1.entity.Ayuntamiento"/>
+
+		
+	</session-factory>
+</hibernate-configuration>

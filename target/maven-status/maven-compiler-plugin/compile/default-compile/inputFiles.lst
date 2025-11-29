@@ -1,0 +1,11 @@
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/PrimaryController.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/entity/Persona.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/entity/Pasaporte.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/SecondaryController.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/module-info.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/App.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/entity/HibernateUtil.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/entity/Ayuntamiento.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/controller/PersonaController.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/entity/Hijo.java
+/home/admin/eclipse-workspace/Hibernate/prueba1/src/main/java/hibernate/prueba1/controller/PersonaCRUD.java
