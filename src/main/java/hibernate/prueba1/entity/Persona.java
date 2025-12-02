@@ -34,8 +34,8 @@ public class Persona implements Serializable{
 	private Pasaporte pasaporte;
 	
 	//Relacion navegable en un unico sentido
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "ID_AYUNTAMIENTO", nullable = false)
+	@ManyToOne()
+	@JoinColumn(name = "ID_AYUNTAMIENTO", nullable = true)
 	private Ayuntamiento ayuntamiento;
 	
 	//Relacion navegable en un unico sentido
