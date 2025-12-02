@@ -1,4 +1,4 @@
-package hibernate.prueba1.entity;
+package hibernate.prueba1;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

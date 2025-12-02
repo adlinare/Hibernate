@@ -7,8 +7,8 @@ import java.util.ResourceBundle;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
+import hibernate.prueba1.HibernateUtil;
 import hibernate.prueba1.entity.Ayuntamiento;
-import hibernate.prueba1.entity.HibernateUtil;
 import hibernate.prueba1.entity.Persona;
 import javafx.fxml.Initializable;
 import javafx.collections.FXCollections;
@@ -16,6 +16,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -57,9 +58,14 @@ public class PersonaController implements Initializable {
 
     @FXML
     private Button bUpdate;
+    @FXML
+    private Button BtnAdd;
 
     @FXML
     private TextField tfDni;
+    
+    @FXML
+    private ChoiceBox<Ayuntamiento> CBAyunta;
     
     PersonaCRUD pcrud = new PersonaCRUD();
 	
@@ -87,9 +93,22 @@ public class PersonaController implements Initializable {
 		personas = pcrud.getAll();
 
 		tPersona.setItems(personas);
+		tPersona.refresh();
 		
-
+		
 	}
+	
+	@FXML
+    void oACliked() { //Quitar de aqui el event es importante
+		Persona b = tPersona.getSelectionModel().getSelectedItem();
+		if (b != null) {
+			tfDni.setText(b.getDni());
+			tfNombre.setText(b.getNombre());
+			tfEdad.setText(String.valueOf(b.getEdad()));
+		}
+    }
+
+   
 	
     @FXML
     void oaAdd(ActionEvent event) {
@@ -104,6 +123,11 @@ public class PersonaController implements Initializable {
 
     @FXML
     void oaUpdate(ActionEvent event) {
+
+    }
+    
+    @FXML
+    void oaAddF(ActionEvent event) {
 
     }
 
